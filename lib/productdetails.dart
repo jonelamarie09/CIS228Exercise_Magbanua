@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:main/main.dart';
+import 'main.dart';
 
 class ProductDetails extends MyApp {
   final Map<String, String> product;

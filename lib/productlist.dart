@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:main/main.dart';
+import 'main.dart';
 import 'productdetails.dart';
 
 import 'app_drawer.dart'; // import your Drawer class

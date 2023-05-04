@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:main/about.dart';
-import 'package:main/cart.dart';
-import 'package:main/productlist.dart';
+import 'package:flutter_activity_magbanua/home.dart';
+import 'about.dart';
+import 'cart.dart';
+import 'productlist.dart';
 
 class MyDrawer extends StatelessWidget {
   const MyDrawer({Key? key}) : super(key: key);
@@ -58,6 +59,16 @@ class MyDrawer extends StatelessWidget {
               Navigator.pushReplacement(
                 context,
                 MaterialPageRoute(builder: (context) => Cart()),
+              );
+            },
+          ),
+          ListTile(
+            leading: const Icon(Icons.home),
+            title: const Text('Home'),
+            onTap: () {
+              Navigator.pushReplacement(
+                context,
+                MaterialPageRoute(builder: (context) => HomeScreen()),
               );
             },
           ),
