@@ -4,6 +4,7 @@ import 'about.dart';
 import 'cart.dart';
 import 'productlist.dart';
 
+
 class MyDrawer extends StatelessWidget {
   const MyDrawer({Key? key}) : super(key: key);
 
@@ -19,7 +20,7 @@ class MyDrawer extends StatelessWidget {
                 image: AssetImage('../assets/coffee.png'),
                 fit: BoxFit.cover,
               ),
-              color: Colors.white.withOpacity(0.9),
+              color: Colors.orange.withOpacity(0.9),
             ),
             child: const DrawerHeader(
               child: Center(
@@ -40,6 +41,14 @@ class MyDrawer extends StatelessWidget {
             onTap: () {
               Navigator.pushReplacement(context,
                   MaterialPageRoute(builder: (context) => AboutPage()));
+            },
+          ),
+          ListTile(
+            leading: const Icon(Icons.home),
+            title: const Text('Home'),
+            onTap: () {
+              Navigator.pushReplacement(context,
+                  MaterialPageRoute(builder: (context) => HomeScreen()));
             },
           ),
           ListTile(

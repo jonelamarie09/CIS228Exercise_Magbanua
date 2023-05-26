@@ -16,7 +16,7 @@ class AboutPage extends MyApp {
         child: Column(
           children: [
             Image.asset(
-              '../assets/coffee.png', // Replace with your image path
+              '../assets/coffee.png', 
               height: 300.0,
               width: 1500.0,
             ),
